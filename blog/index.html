@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Pentify Insights</title>
+<meta name="description" content="Practical thinking on data strategy, reporting and the systems behind good decisions, from the Pentify Insights team.">
+<link rel="canonical" href="https://www.pentifyinsights.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pentify Insights">
+<meta property="og:title" content="Blog | Pentify Insights">
+<meta property="og:description" content="Practical thinking on data strategy, reporting and the systems behind good decisions, from the Pentify Insights team.">
+<meta property="og:url" content="https://www.pentifyinsights.com/blog/">
+<meta property="og:image" content="https://www.pentifyinsights.com/assets/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Geist:wght@400;500;600&amp;family=Quicksand:wght@300&amp;display=swap" rel="stylesheet">
+<!-- Analytics: paste your GA4 (or other) tag here, once, in /partials or on each page. -->
+<style>
+body{margin:0}
+a{color:inherit}a:hover{opacity:.85}
+.pg *{font-family:inherit;box-sizing:border-box}
+.pg h1,.pg h2,.pg h3,.pg .disp{font-family:Manrope,'Helvetica Neue',Arial,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,32px);padding-right:clamp(20px,5vw,32px)}
+.eyebrow{margin:0;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1F4FD1}
+.sec-h{margin:0;font-size:clamp(34px,5vw,48px);line-height:1.08;font-weight:700;letter-spacing:-.03em}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary:focus-visible{outline:2px solid #8FB3FF;outline-offset:2px}
+.mnav .x{display:none}.mnav[open] .x{display:block}.mnav[open] .bars{display:none}
+.mnav-panel{position:absolute;right:0;top:54px;width:min(280px,calc(100vw - 40px));border-radius:16px;padding:10px;display:flex;flex-direction:column;z-index:50;box-shadow:0 18px 40px rgba(14,23,38,.28)}
+.mnav-panel a{padding:13px 14px;border-radius:10px;text-decoration:none;font-size:16px;font-weight:500}
+.mnav-panel a.mcta{margin-top:6px;text-align:center;font-weight:600;border-radius:999px}
+@media (max-width: 760px){.navlink,.navcta{display:none !important}.mnav{display:block}}
+.card{text-decoration:none;color:#0E1726;background:#FFFFFF;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;border:1px solid #DCE2EC;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{opacity:1;transform:translateY(-3px);box-shadow:0 14px 32px rgba(14,23,38,.08)}
+.card .meta{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#1F4FD1}
+.card .t{font-family:Manrope,'Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:21px;line-height:1.3;letter-spacing:-.01em}
+.card .x{font-size:15px;line-height:1.6;color:#384152;margin:0}
+.card .d{font-size:14px;color:#566074;margin-top:auto}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+@media (min-width: 1040px){.bgrid{grid-template-columns:repeat(3,1fr)}.bgrid .feat{grid-column:span 2}}
+.prose{max-width:720px;margin:0 auto;font-size:18px;line-height:1.75;color:#384152}
+.prose>*{margin:0 0 22px}
+.prose h2{font-size:clamp(26px,3vw,32px);line-height:1.2;color:#0E1726;font-weight:700;letter-spacing:-.02em;margin:52px 0 18px}
+.prose h3{font-size:21px;line-height:1.3;color:#0E1726;font-weight:700;letter-spacing:-.01em;margin:34px 0 12px}
+.prose h2+h3{margin-top:18px}
+.prose strong{color:#0E1726;font-weight:600}
+.prose a{color:#1F4FD1;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.prose ul,.prose ol{padding-left:24px}
+.prose li{margin:0 0 10px;padding-left:4px}
+.prose li ul{margin-top:10px}
+.prose li::marker{color:#2457E6}
+.prose .pull{font-family:Manrope,'Helvetica Neue',Arial,sans-serif;font-size:24px;line-height:1.4;font-weight:700;color:#0E1726;letter-spacing:-.015em;border-left:3px solid #2457E6;padding-left:22px;margin:40px 0}
+.prose>p:first-child{font-size:21px;line-height:1.65;color:#0E1726}
+</style>
+</head>
+<body>
+<div class="pg" style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #0E1726; background: #F4F6FA; width: 100%">
+<header style="background: #282B47">
+<nav aria-label="Main" class="wrap" style="padding-top: 20px; padding-bottom: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" aria-label="Pentify Insights home" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<img src="/assets/logo-white.png" alt="" style="width: 32px; height: 32px; object-fit: contain">
+<span style="font-family: Quicksand, sans-serif; font-weight: 300; font-size: 18px; line-height: 1; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap">Pentify Insights</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a class="navlink" href="/about/" style="color: #D4D6E6; text-decoration: none">About</a>
+<a class="navlink" href="/services/" style="color: #D4D6E6; text-decoration: none">Services</a>
+<a class="navlink" href="/partners/" style="color: #D4D6E6; text-decoration: none">For Partners</a>
+<a class="navlink" href="/blog/" aria-current="page" style="color: #FFFFFF; text-decoration: none">Blog</a>
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="navcta" style="background: #FFFFFF; color: #282B47; text-decoration: none; padding: 12px 20px; border-radius: 999px">Book a call</a>
+<details class="mnav"><summary aria-label="Menu"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="bars" d="M4 7h16M4 12h16M4 17h16"></path><path class="x" d="M6 6l12 12M18 6L6 18"></path></svg></summary><div class="mnav-panel" style="background: #282B47; border: 1px solid #3A3E63"><a href="/about/" style="color: #FFFFFF">About</a><a href="/services/" style="color: #FFFFFF">Services</a><a href="/partners/" style="color: #FFFFFF">For Partners</a><a href="/blog/" style="color: #FFFFFF">Blog</a><a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="mcta" style="background: #FFFFFF; color: #282B47">Book a call</a></div></details>
+</div>
+</nav>
+</header>
+<section id="top" style="background: #FFFFFF; border-bottom: 1px solid #DCE2EC">
+<div class="wrap" style="padding-top: clamp(56px, 8vw, 96px); padding-bottom: clamp(48px, 6vw, 72px); display: flex; flex-wrap: wrap; gap: clamp(24px, 5vw, 80px); align-items: flex-end">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<p class="eyebrow">Blog</p>
+<h1 style="margin: 0; font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em; text-wrap: balance">Insights for smarter decisions</h1>
+</div>
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; font-size: 18px; line-height: 1.65; color: #384152">Practical thinking on data strategy, reporting and the systems behind good decisions, from the team that builds them.</p>
+</div>
+</section>
+<section>
+<div class="wrap" style="padding-top: clamp(48px, 6vw, 72px); padding-bottom: clamp(64px, 8vw, 104px); display: flex; flex-direction: column; gap: 28px">
+<div class="bgrid">
+<a class="card feat" href="/blog/from-silo-to-symphony-how-breaking-down-internal-barriers-doubles-data-impact/">
+<div aria-hidden="true" style="height: 200px; background: #282B47; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 480px; height: auto; display: block; overflow: visible"><rect x="92" y="58" width="36" height="96" rx="8" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="101" y="72" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="101" y="94" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="101" y="116" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="162" y="58" width="36" height="96" rx="8" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="171" y="72" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="171" y="94" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="171" y="116" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="232" y="58" width="36" height="96" rx="8" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="241" y="72" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="241" y="94" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="241" y="116" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><path d="M60 106 H300" stroke="#8FB3FF" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 9"></path><circle cx="110" cy="106" r="6" fill="#8FB3FF"></circle><circle cx="180" cy="106" r="6" fill="#8FB3FF"></circle><circle cx="250" cy="106" r="6" fill="#8FB3FF"></circle></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Latest · Strategy</span>
+<span class="t" style="font-size: clamp(22px, 2.2vw, 28px); line-height: 1.22; letter-spacing: -0.02em">From Silo to Symphony: How Breaking Down Internal Barriers Doubles Data Impact</span>
+<p class="x">Most organisations say they want to be data driven, but many never reach it. The biggest barrier is not technology. It is the walls inside the business.</p>
+<span class="d">14 October 2025 · 4 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/data-driven-leadership-how-founders-who-rely-only-on-themselves-block-growth/">
+<div aria-hidden="true" style="height: 200px; background: #2457E6; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><path d="M180 100 L255 130" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L182 163" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L107 133" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L105 70" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L178 37" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L253 67" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M255 130 L182 163" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M182 163 L107 133" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M107 133 L105 70" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M105 70 L178 37" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M178 37 L253 67" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M253 67 L255 130" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><circle cx="255" cy="130" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="255" cy="130" r="4" fill="#FFFFFF"></circle><circle cx="182" cy="163" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="182" cy="163" r="4" fill="#FFFFFF"></circle><circle cx="107" cy="133" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="107" cy="133" r="4" fill="#FFFFFF"></circle><circle cx="105" cy="70" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="105" cy="70" r="4" fill="#FFFFFF"></circle><circle cx="178" cy="37" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="178" cy="37" r="4" fill="#FFFFFF"></circle><circle cx="253" cy="67" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="253" cy="67" r="4" fill="#FFFFFF"></circle><circle cx="180" cy="100" r="20" fill="#FFFFFF"></circle></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Leadership</span>
+<span class="t">Data-Driven Leadership: How Founders Who Rely Only on Themselves Block Growth</span>
+<p class="x">Most founders start with a clear vision and a belief that no one else can do things quite like they can. When that mindset doesn’t evolve, it quietly becomes a growth killer.</p>
+<span class="d">14 October 2025 · 7 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/why-your-fast-growth-business-is-actually-fragile-the-hidden-data-fault-lines/">
+<div aria-hidden="true" style="height: 200px; background: #E3EBFF; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><path d="M50 160 H310" stroke="#CBD3E0" stroke-width="2"></path><rect x="70" y="130" width="24" height="30" rx="5" fill="#CBD3E0"></rect><rect x="108" y="116" width="24" height="44" rx="5" fill="#CBD3E0"></rect><rect x="146" y="108" width="24" height="52" rx="5" fill="#CBD3E0"></rect><rect x="184" y="90" width="24" height="70" rx="5" fill="#CBD3E0"></rect><rect x="222" y="76" width="24" height="84" rx="5" fill="#CBD3E0"></rect><rect x="260" y="56" width="24" height="104" rx="5" fill="#2457E6"></rect><path d="M66 128 C 130 120, 190 92, 300 42" fill="none" stroke="#0E1726" stroke-width="3" stroke-linecap="round"></path><path d="M262 64 l-10 22 l14 8 l-12 26 l10 10 l-8 30" fill="none" stroke="#F07167" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Strategy</span>
+<span class="t">Why Your ‘Fast-Growth’ Business is Actually Fragile: The Hidden Data Fault Lines</span>
+<p class="x">Revenue is climbing and the team is expanding. But systems don’t talk to each other, reports don’t match and no one really trusts the numbers.</p>
+<span class="d">23 September 2025 · 5 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/from-gut-feel-to-data-driven-5-signs-it-s-time-to-change-your-decision-making-model/">
+<div aria-hidden="true" style="height: 200px; background: #282B47; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><path d="M60 100 H150" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path><path d="M150 100 C 190 100, 200 50, 250 50 H300" fill="none" stroke="#8FB3FF" stroke-width="3" stroke-linecap="round"></path><path d="M150 100 C 190 100, 200 150, 250 150 H300" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 8"></path><circle cx="150" cy="100" r="9" fill="#FFFFFF"></circle><circle cx="300" cy="50" r="9" fill="#8FB3FF"></circle><circle cx="300" cy="150" r="9" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="2"></circle><circle cx="70" cy="60" r="4" fill="rgba(255,255,255,.28)"></circle><circle cx="96" cy="140" r="4" fill="rgba(255,255,255,.28)"></circle><circle cx="118" cy="74" r="4" fill="rgba(255,255,255,.28)"></circle><circle cx="84" cy="118" r="4" fill="rgba(255,255,255,.28)"></circle></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Leadership</span>
+<span class="t">From Gut Feel to Data-Driven: 5 Signs It’s Time to Change Your Decision-Making Model</span>
+<p class="x">Gut feel is fast and often good enough early on. As complexity grows, relying on instinct alone becomes a liability. Here are five signs it’s time to change.</p>
+<span class="d">23 September 2025 · 4 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/why-is-my-reporting-always-out-of-date/">
+<div aria-hidden="true" style="height: 200px; background: #2457E6; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><rect x="86" y="44" width="188" height="116" rx="14" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="106" y="112" width="14" height="28" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="130" y="100" width="14" height="40" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="154" y="106" width="14" height="34" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="178" y="88" width="14" height="52" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="202" y="78" width="14" height="62" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="106" y="60" width="64" height="7" rx="3.5" fill="rgba(255,255,255,.28)"></rect><circle cx="252" cy="58" r="30" fill="#FFFFFF"></circle><path d="M252 42 V58 L263 66" fill="none" stroke="#2457E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Dashboards</span>
+<span class="t">Why Is My Reporting Always Out of Date?</span>
+<p class="x">You log into your dashboard only to find last week’s figures. Here’s why reporting lags behind reality, and the practical steps to fix it.</p>
+<span class="d">5 August 2025 · 3 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/why-your-erp-really-needs-a-crm-integration/">
+<div aria-hidden="true" style="height: 200px; background: #E3EBFF; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><rect x="58" y="62" width="96" height="76" rx="14" fill="#FFFFFF" stroke="#CBD3E0"></rect><rect x="206" y="62" width="96" height="76" rx="14" fill="#FFFFFF" stroke="#CBD3E0"></rect><text x="106" y="106" text-anchor="middle" font-size="18" font-weight="700" fill="#0E1726" style="font-family: Manrope, sans-serif">ERP</text><text x="254" y="106" text-anchor="middle" font-size="18" font-weight="700" fill="#0E1726" style="font-family: Manrope, sans-serif">CRM</text><path d="M160 90 H200" stroke="#2457E6" stroke-width="3" stroke-linecap="round"></path><path d="M192 82 l8 8 l-8 8" fill="none" stroke="#2457E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M200 112 H160" stroke="#2457E6" stroke-width="3" stroke-linecap="round"></path><path d="M168 104 l-8 8 l8 8" fill="none" stroke="#2457E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Integration</span>
+<span class="t">Why Your ERP Really Needs a CRM Integration</span>
+<p class="x">If your ERP and CRM aren’t integrated, your teams work from conflicting information, customers get second-rate service and strategy suffers.</p>
+<span class="d">29 July 2025 · 4 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/the-brutal-truth-about-data-migration-why-most-projects-fail-and-how-to-get-it-right/">
+<div aria-hidden="true" style="height: 200px; background: #282B47; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><ellipse cx="84" cy="66" rx="34" ry="11" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)" stroke-width="2"></ellipse><path d="M50 66 V134 A34 11 0 0 0 118 134 V66" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)" stroke-width="2"></path><path d="M50 100 A34 11 0 0 0 118 100" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"></path><ellipse cx="276" cy="66" rx="34" ry="11" fill="rgba(255,255,255,.12)" stroke="#8FB3FF" stroke-width="2"></ellipse><path d="M242 66 V134 A34 11 0 0 0 310 134 V66" fill="rgba(255,255,255,.12)" stroke="#8FB3FF" stroke-width="2"></path><path d="M242 100 A34 11 0 0 0 310 100" fill="none" stroke="#8FB3FF" stroke-width="2"></path><rect x="140" y="94" width="16" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="168" y="84" width="16" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="196" y="94" width="16" height="16" rx="4" fill="#8FB3FF"></rect><rect x="224" y="84" width="16" height="16" rx="4" fill="#8FB3FF"></rect></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Data migration</span>
+<span class="t">The Brutal Truth About Data Migration: Why Most Projects Fail and How to Get It Right</span>
+<p class="x">Data migration sounds simple: move data from one system to another. It rarely is. Here’s where migrations go wrong, and the seven steps to get it right.</p>
+<span class="d">4 July 2025 · 3 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/your-business-is-flying-blind-without-a-data-and-architecture-audit/">
+<div aria-hidden="true" style="height: 200px; background: #2457E6; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><rect x="70" y="48" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="102" y="48" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="134" y="48" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="166" y="48" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="198" y="48" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="230" y="48" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="70" y="76" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="102" y="76" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="134" y="76" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="166" y="76" width="24" height="16" rx="4" fill="#F07167"></rect><rect x="198" y="76" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="230" y="76" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="70" y="104" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="102" y="104" width="24" height="16" rx="4" fill="#F07167"></rect><rect x="134" y="104" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="166" y="104" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="198" y="104" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="230" y="104" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="70" y="132" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="102" y="132" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="134" y="132" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="166" y="132" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="198" y="132" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="230" y="132" width="24" height="16" rx="4" fill="rgba(255,255,255,.28)"></rect><circle cx="236" cy="104" r="40" fill="none" stroke="#FFFFFF" stroke-width="5"></circle><path d="M265 133 L298 166" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"></path></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Data strategy</span>
+<span class="t">Your Business Is Flying Blind Without a Data and Architecture Audit</span>
+<p class="x">Broken integrations, duplicated reports, conflicting versions of the truth. A data and architecture audit shows where the risk is hiding.</p>
+<span class="d">8 July 2025 · 4 min read</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section id="book" style="background: #2457E6; color: #FFFFFF">
+<div class="wrap" style="padding-top: clamp(56px, 7vw, 88px); padding-bottom: clamp(56px, 7vw, 88px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: clamp(32px, 4.5vw, 44px); line-height: 1.08; font-weight: 700; letter-spacing: -0.03em">See where your data stands</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #E3EBFF; max-width: 620px">Take our data maturity assessment for an honest snapshot of where you are today and what to tackle first.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/assessment/" style="background: #FFFFFF; color: #0E1726; text-decoration: none; font-weight: 600; font-size: 17px; padding: 18px 30px; border-radius: 999px">Start the assessment</a>
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 17px 29px; border-radius: 999px; border: 1px solid #FFFFFF">Book a call</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #0E1726; color: #D2D9E5">
+<div class="wrap" style="padding-top: 48px; padding-bottom: 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px"><img src="/assets/logo-white.png" alt="" style="width: 32px; height: 32px; object-fit: contain"><span style="font-family: Quicksand, sans-serif; font-weight: 300; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF">Pentify Insights</span></span>
+<span>Level 1, 9–12 Hood Street<br>Collingwood, Victoria 3066</span>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<a href="/about/" style="color: #D2D9E5; text-decoration: none">About</a>
+<a href="/services/" style="color: #D2D9E5; text-decoration: none">Services</a>
+<a href="/partners/" style="color: #D2D9E5; text-decoration: none">For Partners</a>
+<a href="/blog/" style="color: #D2D9E5; text-decoration: none">Blog</a>
+<a href="#book" style="color: #D2D9E5; text-decoration: none">Contact</a>
+</nav>
+<span style="width: 100%; font-size: 13px; color: #95A1B6">© 2026 Pentify Insights. All rights reserved.</span>
+</div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data maturity assessment | Pentify Insights</title>
+<meta name="description" content="Answer eight quick questions to see where your business sits on the data maturity curve, and what to tackle first.">
+<link rel="canonical" href="https://www.pentifyinsights.com/assessment/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pentify Insights">
+<meta property="og:title" content="Data maturity assessment | Pentify Insights">
+<meta property="og:description" content="Answer eight quick questions to see where your business sits on the data maturity curve, and what to tackle first.">
+<meta property="og:url" content="https://www.pentifyinsights.com/assessment/">
+<meta property="og:image" content="https://www.pentifyinsights.com/assets/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Geist:wght@400;500;600&amp;family=Quicksand:wght@300&amp;display=swap" rel="stylesheet">
+<!-- Analytics: paste your GA4 (or other) tag here, once, in /partials or on each page. -->
+<style>
+body{margin:0}
+a{color:inherit}a:hover{opacity:.85}
+.pg *{font-family:inherit;box-sizing:border-box}
+.pg h1,.pg h2,.pg h3,.pg .disp{font-family:Manrope,'Helvetica Neue',Arial,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,32px);padding-right:clamp(20px,5vw,32px)}
+.eyebrow{margin:0;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1F4FD1}
+.panel{background:#FFFFFF;border:1px solid #DCE2EC;border-radius:24px;padding:clamp(24px,5vw,48px);display:flex;flex-direction:column;gap:24px}
+.btn{font:inherit;font-weight:600;font-size:16px;padding:16px 26px;border-radius:999px;border:0;background:#2457E6;color:#FFFFFF;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn:focus-visible,.opt:focus-visible,.ghost:focus-visible{outline:3px solid #8FB3FF;outline-offset:2px}
+.ghost{font:inherit;font-weight:600;font-size:15px;background:transparent;border:0;color:#566074;cursor:pointer;padding:10px 0}
+.opt{font:inherit;text-align:left;width:100%;display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:14px;border:1.5px solid #DCE2EC;background:#FFFFFF;color:#0E1726;font-size:16px;line-height:1.4;cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover{border-color:#8FB3FF}
+.opt .dot{flex:0 0 20px;height:20px;border-radius:50%;border:2px solid #CBD3E0;background:#FFFFFF}
+.opt.sel{border-color:#2457E6;background:#E3EBFF}
+.opt.sel .dot{border-color:#2457E6;background:#2457E6;box-shadow:inset 0 0 0 4px #E3EBFF}
+.bar{height:6px;border-radius:3px;background:#EAEEF5;overflow:hidden}
+.bar span{display:block;height:100%;background:#2457E6;border-radius:3px;transition:width .3s ease}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500;color:#384152}
+.fld input{font:inherit;font-size:16px;padding:14px 16px;border-radius:12px;border:1.5px solid #CBD3E0;background:#FFFFFF;color:#0E1726}
+.fld input:focus{outline:none;border-color:#2457E6}
+.stage{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:6px}
+.stage i{display:block;height:8px;border-radius:4px;background:#DCE2EC}
+.stage.on i{background:#2457E6}
+.stage span{font-size:12px;color:#566074}
+.stage.on span{color:#0E1726;font-weight:600}
+.rec{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-top:1px solid #DCE2EC;text-decoration:none}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary:focus-visible{outline:2px solid #8FB3FF;outline-offset:2px}
+.mnav .x{display:none}.mnav[open] .x{display:block}.mnav[open] .bars{display:none}
+.mnav-panel{position:absolute;right:0;top:54px;width:min(280px,calc(100vw - 40px));border-radius:16px;padding:10px;display:flex;flex-direction:column;z-index:50;box-shadow:0 18px 40px rgba(14,23,38,.28)}
+.mnav-panel a{padding:13px 14px;border-radius:10px;text-decoration:none;font-size:16px;font-weight:500}
+.mnav-panel a.mcta{margin-top:6px;text-align:center;font-weight:600;border-radius:999px}
+@media (max-width: 760px){.navlink,.navcta{display:none !important}.mnav{display:block}}
+</style>
+</head>
+<body>
+<div class="pg" style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #0E1726; background: #F4F6FA; width: 100%">
+<div style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif">
+
+<!-- NAV -->
+<header style="background: #282B47">
+<nav aria-label="Main" class="wrap" style="padding-top: 20px; padding-bottom: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" aria-label="Pentify Insights home" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<img src="/assets/logo-white.png" alt="" style="width: 32px; height: 32px; object-fit: contain">
+<span style="font-family: Quicksand, sans-serif; font-weight: 300; font-size: 18px; line-height: 1; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap">Pentify Insights</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a class="navlink" href="/about/" style="color: #D4D6E6; text-decoration: none">About</a>
+<a class="navlink" href="/services/" style="color: #D4D6E6; text-decoration: none">Services</a>
+<a class="navlink" href="/partners/" style="color: #D4D6E6; text-decoration: none">For Partners</a>
+<a class="navlink" href="/blog/" style="color: #D4D6E6; text-decoration: none">Blog</a>
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="navcta" style="background: #FFFFFF; color: #282B47; text-decoration: none; padding: 12px 20px; border-radius: 999px">Book a call</a>
+<details class="mnav"><summary aria-label="Menu"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="bars" d="M4 7h16M4 12h16M4 17h16"></path><path class="x" d="M6 6l12 12M18 6L6 18"></path></svg></summary><div class="mnav-panel" style="background: #282B47; border: 1px solid #3A3E63"><a href="/about/" style="color: #FFFFFF">About</a><a href="/services/" style="color: #FFFFFF">Services</a><a href="/partners/" style="color: #FFFFFF">For Partners</a><a href="/blog/" style="color: #FFFFFF">Blog</a><a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="mcta" style="background: #FFFFFF; color: #282B47">Book a call</a></div></details>
+</div>
+</nav>
+</header>
+
+<main class="wrap" style="padding-top: clamp(40px, 7vw, 88px); padding-bottom: clamp(56px, 8vw, 104px)">
+<div style="max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+
+<!-- INTRO -->
+<div data-step="intro">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p class="eyebrow">Data maturity assessment</p>
+<h1 style="margin: 0; font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em; text-wrap: balance">How ready is your data?</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #384152">Answer eight quick questions and see where your business sits on the data maturity curve, with the next steps that will make the biggest difference.</p>
+</div>
+<div class="panel">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 4px"><strong class="disp" style="font-size: 22px">8 questions</strong><span style="font-size: 15px; color: #566074">Multiple choice, no jargon</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong class="disp" style="font-size: 22px">About 3 minutes</strong><span style="font-size: 15px; color: #566074">Answer for your business today</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong class="disp" style="font-size: 22px">Instant results</strong><span style="font-size: 15px; color: #566074">Your stage and where to start</span></div>
+</div>
+<div><button type="button" class="btn" data-act="start">Start the assessment →</button></div>
+</div>
+</div>
+<div data-step="q" hidden>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 14px; color: #566074"><span>Question <span data-f="qNum"></span> of <span data-f="qTotal"></span></span><span data-f="qArea"></span></div>
+<div class="bar"><span data-f="progress"></span></div>
+</div>
+<div class="panel">
+<h2 data-f="qText" style="margin: 0; font-size: clamp(24px, 3.4vw, 32px); line-height: 1.2; font-weight: 700; letter-spacing: -0.02em"></h2>
+<div role="radiogroup" data-f="opts" style="display: flex; flex-direction: column; gap: 10px"></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<button type="button" class="ghost" data-act="back">← Back</button>
+<span style="font-size: 13px; color: #566074">Pick the answer closest to today</span>
+</div>
+</div>
+</div>
+<div data-step="lead" hidden>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 14px; color: #566074"><span>Nearly there</span><span>Your results</span></div>
+<div class="bar"><span style="width: 100%"></span></div>
+</div>
+<form class="panel" name="assessment" method="POST" data-netlify="true" netlify-honeypot="company_url" data-f="leadForm">
+<input type="hidden" name="form-name" value="assessment"><input type="hidden" name="score"><input type="hidden" name="stage"><input type="hidden" name="answers"><p hidden><label>Leave blank <input name="company_url"></label></p>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: clamp(24px, 3.4vw, 32px); line-height: 1.2; font-weight: 700; letter-spacing: -0.02em">Where should we send your results?</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #384152">You'll see your results straight away. We'll also email you a copy with a few practical next steps.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px">
+<label class="fld" for="as-name">First name<input id="as-name" type="text" autocomplete="given-name" name="first_name"></label>
+<label class="fld" for="as-company">Company<input id="as-company" type="text" autocomplete="organization" name="company"></label>
+</div>
+<label class="fld" for="as-email">Work email<input id="as-email" type="email" autocomplete="email" name="email" required></label>
+<p role="alert" data-f="err" hidden style="margin: 0; font-size: 14px; color: #B42318">Enter a valid email address so we can send your results.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+<button type="button" class="ghost" data-act="back">← Back</button>
+<button type="submit" class="btn">Show my results</button>
+</div>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #566074">We'll only use your details to send your results and occasional insights. Unsubscribe any time.</p>
+</form>
+</div>
+<div data-step="result" hidden>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p class="eyebrow"><span data-f="greeting"></span></p>
+<h1 style="margin: 0; font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em; text-wrap: balance">Stage <span data-f="stageNum"></span>: <span data-f="stageName"></span></h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #384152"><span data-f="stageDesc"></span></p>
+</div>
+<div class="panel">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><strong class="disp" style="font-size: 18px">Your data maturity</strong><span style="font-size: 14px; color: #566074">Score <span data-f="score"></span> of 32</span></div>
+<div style="display: flex; gap: 8px">
+<span data-f="stages" style="display: contents"></span>
+</div>
+</div>
+<div class="panel">
+<strong class="disp" style="font-size: 20px">Your biggest opportunities</strong>
+<div style="display: flex; flex-direction: column">
+<span data-f="gaps" style="display: contents"></span>
+</div>
+</div>
+<div style="background: #0E1726; color: #FFFFFF; border-radius: 24px; padding: clamp(24px, 5vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-size: clamp(24px, 3vw, 30px); font-weight: 700; letter-spacing: -0.02em">Talk through your results</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D2D9E5">Book a free 30-minute call and we'll turn this into a practical plan for your business.</p>
+</div>
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="btn" style="background: #8FB3FF; color: #0E1726">Book a call</a>
+</div>
+<div><button type="button" class="ghost" data-act="restart">Retake the assessment</button></div>
+</div>
+
+</div>
+</main>
+
+<!-- FOOTER -->
+<footer id="book" style="background: #0E1726; color: #D2D9E5">
+<div class="wrap" style="padding-top: 48px; padding-bottom: 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px"><img src="/assets/logo-white.png" alt="" style="width: 32px; height: 32px; object-fit: contain"><span style="font-family: Quicksand, sans-serif; font-weight: 300; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF">Pentify Insights</span></span>
+<span>Level 1, 9–12 Hood Street<br>Collingwood, Victoria 3066</span>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<a href="/about/" style="color: #D2D9E5; text-decoration: none">About</a>
+<a href="/services/" style="color: #D2D9E5; text-decoration: none">Services</a>
+<a href="/partners/" style="color: #D2D9E5; text-decoration: none">For Partners</a>
+<a href="/blog/" style="color: #D2D9E5; text-decoration: none">Blog</a>
+</nav>
+<span style="width: 100%; font-size: 13px; color: #95A1B6">© 2026 Pentify Insights. All rights reserved.</span>
+</div>
+</footer>
+
+</div>
+</div>
+<script>
+(function () {
+  var Q = [
+{ area: 'Data sources', text: 'Where does your business data live today?', service: 'DataOps', id: 'dataops', tip: 'Bring your sources into one warehouse so every report starts from the same data.', options: ['Mostly in spreadsheets and individual tools', 'A few connected tools, with lots of exports', 'Most sources feed into one central place', 'A governed warehouse that every tool draws on'] },
+{ area: 'Reporting', text: 'How do your reports get made?', service: 'Dashboards & reporting', id: 'dashboards', tip: 'Automate your recurring reports and free up hours every week.', options: ['By hand, when someone asks', 'Spreadsheets someone rebuilds each week', 'Dashboards for some teams', 'Automated dashboards everyone uses'] },
+{ area: 'Shared definitions', text: 'Do your teams agree on the numbers?', service: 'Data strategy', id: 'data-strategy', tip: 'Agree your core metrics and how each is calculated, once, for everyone.', options: ['Rarely. We debate whose number is right', 'Sometimes, depending on the report', 'Mostly, for our key metrics', 'Yes. Our metrics have written definitions'] },
+{ area: 'Tracking', text: 'How confident are you in your website and conversion tracking?', service: 'Event collection', id: 'tracking', tip: 'Fix your tracking so every conversion is captured and your ad platforms bid on real signals.', options: ['Not sure it works properly', 'Basic analytics only', 'We have a tracking plan, with some gaps', 'Server-side, consent-aware and checked regularly'] },
+{ area: 'Marketing ROI', text: 'Can you connect marketing spend to actual revenue?', service: 'Attribution & measurement', id: 'attribution', tip: 'Join spend to revenue so budget decisions rest on what really works.', options: ['No', 'Only through what the ad platforms report', 'For some channels, through our CRM', 'Yes, with attribution models or lift tests'] },
+{ area: 'Ownership', text: 'Who looks after your data?', service: 'Data strategy', id: 'data-strategy', tip: 'Give every key data set a clear owner and simple rules for access and quality.', options: ['No one in particular', 'Someone in marketing or ops, part time', 'A dedicated analyst', 'A data team with clear owners'] },
+{ area: 'Manual work', text: 'How much manual data work does your team do each week?', service: 'Workflow automation', id: 'automation', tip: 'Automate the copying and checking between tools so your team can focus on decisions.', options: ['A lot. Copying between tools is routine', 'A few hours of exports and fixes', 'Some, but most of it is automated', 'Very little. Our workflows are automated'] },
+{ area: 'Reliability', text: 'When a data source breaks or changes, how do you find out?', service: 'DataOps', id: 'dataops', tip: 'Monitor your pipelines so problems are caught before anyone sees a wrong number.', options: ['When a report looks wrong', 'Someone checks manually', 'Some automatic alerts', 'Full monitoring with automatic alerts'] }
+];
+  var STAGES = [
+null,
+{ name: 'Getting visibility', desc: 'Your data lives in separate tools and most reporting is done by hand. The quickest wins are reliable tracking and a first dashboard everyone can trust.' },
+{ name: 'Connecting tools', desc: "You have the basics, but your numbers sit in different places and take effort to pull together. Connecting your sources and automating reports will save hours every week." },
+{ name: 'Single source of truth', desc: 'You have a solid foundation and people are asking harder questions. Clear definitions, a governed warehouse and attribution will let you answer them with confidence.' },
+{ name: 'Measurement led', desc: 'Your data is in good shape. The next gains come from proving what really drives growth and putting richer data back into your tools.' }
+];
+  var st = { step: 'intro', qi: 0, answers: [] };
+  var root = document.querySelector('main');
+  function $(f) { return root.querySelector('[data-f="' + f + '"]'); }
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function show(step) {
+    st.step = step;
+    root.querySelectorAll('[data-step]').forEach(function (el) { el.hidden = el.getAttribute('data-step') !== step; });
+    if (step === 'q') renderQ();
+    if (step === 'result') renderResult();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function renderQ() {
+    var q = Q[st.qi];
+    $('qNum').textContent = st.qi + 1; $('qTotal').textContent = Q.length; $('qArea').textContent = q.area; $('qText').textContent = q.text;
+    $('progress').style.width = Math.round(st.qi / Q.length * 100) + '%';
+    $('opts').setAttribute('aria-label', q.text);
+    $('opts').innerHTML = q.options.map(function (label, i) {
+      var sel = st.answers[st.qi] === i + 1;
+      return '<button type="button" role="radio" aria-checked="' + sel + '" class="opt' + (sel ? ' sel' : '') + '" data-pick="' + (i + 1) + '"><span class="dot"></span><span>' + esc(label) + '</span></button>';
+    }).join('');
+  }
+  function scoreOf() { return Q.reduce(function (t, q, i) { return t + (st.answers[i] || 1); }, 0); }
+  function stageOf(score) { return score <= 13 ? 1 : score <= 20 ? 2 : score <= 26 ? 3 : 4; }
+  function renderResult() {
+    var score = scoreOf(), n = stageOf(score), info = STAGES[n], name = (root.querySelector('[name="first_name"]').value || '').trim();
+    $('greeting').textContent = name ? 'Your results, ' + name : 'Your results';
+    $('stageNum').textContent = n; $('stageName').textContent = info.name; $('stageDesc').textContent = info.desc; $('score').textContent = score;
+    $('stages').innerHTML = [1, 2, 3, 4].map(function (k) { return '<div class="stage' + (k <= n ? ' on' : '') + '"><i></i><span>' + esc(STAGES[k].name) + '</span></div>'; }).join('');
+    var ranked = Q.map(function (q, i) { return { q: q, v: st.answers[i] || 1, i: i }; }).sort(function (a, b) { return a.v - b.v || a.i - b.i; });
+    var seen = {}, gaps = [];
+    ranked.forEach(function (r) { if (gaps.length < 3 && r.v !== 4 && !seen[r.q.id]) { seen[r.q.id] = 1; gaps.push({ area: r.q.area, tip: r.q.tip, service: r.q.service, href: '/services/#' + r.q.id }); } });
+    if (!gaps.length) gaps.push({ area: 'Keep the edge', tip: 'You score highly across the board. Lift tests and richer audiences are the next frontier.', service: 'Attribution & measurement', href: '/services/#attribution' });
+    $('gaps').innerHTML = gaps.map(function (g) { return '<a class="rec" href="' + g.href + '"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 16px; color: #0E1726">' + esc(g.area) + '</strong><span style="font-size: 15px; line-height: 1.5; color: #566074">' + esc(g.tip) + '</span></span><span style="flex-shrink: 0; font-size: 14px; font-weight: 600; color: #2457E6">' + esc(g.service) + ' →</span></a>'; }).join('');
+  }
+  root.addEventListener('click', function (e) {
+    var pick = e.target.closest('[data-pick]'), act = e.target.closest('[data-act]');
+    if (pick) {
+      st.answers[st.qi] = +pick.getAttribute('data-pick'); renderQ();
+      setTimeout(function () { if (st.qi + 1 < Q.length) { st.qi++; renderQ(); } else show('lead'); }, 220);
+    } else if (act) {
+      var a = act.getAttribute('data-act');
+      if (a === 'start') { st.qi = 0; show('q'); }
+      if (a === 'restart') { st.qi = 0; st.answers = []; show('intro'); }
+      if (a === 'back') { if (st.step === 'lead') { st.qi = Q.length - 1; show('q'); } else if (st.qi === 0) show('intro'); else { st.qi--; renderQ(); } }
+    }
+  });
+  var form = $('leadForm');
+  form.addEventListener('input', function () { $('err').hidden = true; });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = form.querySelector('[name="email"]').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { $('err').hidden = false; return; }
+    var score = scoreOf();
+    form.querySelector('[name="score"]').value = score;
+    form.querySelector('[name="stage"]').value = stageOf(score) + ' ' + STAGES[stageOf(score)].name;
+    form.querySelector('[name="answers"]').value = Q.map(function (q, i) { return q.area + ': ' + q.options[(st.answers[i] || 1) - 1]; }).join(' | ');
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() }).catch(function () {});
+    show('result');
+  });
+  form.setAttribute('novalidate', '');
+})();
+</script>
+</body>
+</html>
