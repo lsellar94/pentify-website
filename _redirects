@@ -1,0 +1,14 @@
+# Old Squarespace URLs -> new pages (301 = permanent)
+/home                 /                 301
+/what-we-do           /services/        301
+/data-as-a-service    /services/        301
+/about-us             /about/           301
+/contact-us           /#book            301
+/testimonials         /#testimonials    301
+/for-agencies         /partners/        301
+/blog/category/*      /blog/            301
+/blog/tag/*           /blog/            301
+
+# Old blog posts that were not migrated go to the blog index. Migrated posts keep their original URLs,
+# so they are served directly and never reach this rule.
+/blog/*               /blog/            301
