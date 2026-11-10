@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pentify Insights | Fractional data team for growing businesses</title>
+<meta name="description" content="Pentify is a fractional data team for growing businesses. We connect, clean and manage your company data so leaders can trust the numbers and act on them.">
+<link rel="canonical" href="https://www.pentifyinsights.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pentify Insights">
+<meta property="og:title" content="Pentify Insights | Fractional data team for growing businesses">
+<meta property="og:description" content="Pentify is a fractional data team for growing businesses. We connect, clean and manage your company data so leaders can trust the numbers and act on them.">
+<meta property="og:url" content="https://www.pentifyinsights.com/">
+<meta property="og:image" content="https://www.pentifyinsights.com/assets/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Geist:wght@400;500;600&amp;family=Quicksand:wght@300&amp;display=swap" rel="stylesheet">
+<!-- Analytics: paste your GA4 (or other) tag here, once, in /partials or on each page. -->
+<style>
+body{margin:0}
+a{color:inherit}a:hover{opacity:.8}
+.pf *{font-family:inherit}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary:focus-visible{outline:2px solid #8FB3FF;outline-offset:2px}
+.mnav .x{display:none}.mnav[open] .x{display:block}.mnav[open] .bars{display:none}
+.mnav-panel{position:absolute;right:0;top:54px;width:min(280px,calc(100vw - 40px));border-radius:16px;padding:10px;display:flex;flex-direction:column;z-index:50;box-shadow:0 18px 40px rgba(14,23,38,.28)}
+.mnav-panel a{padding:13px 14px;border-radius:10px;text-decoration:none;font-size:16px;font-weight:500}
+.mnav-panel a.mcta{margin-top:6px;text-align:center;font-weight:600;border-radius:999px}
+@media (max-width: 760px){.navlink,.navcta{display:none !important}.mnav{display:block}}
+@media (max-width: 1220px){.hero-vis{padding:32px clamp(8px,7vw,72px) 16px;max-width:760px;margin:0 auto}}
+.logo-group img{flex-shrink:0}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.logo-viewport{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.logo-track{width:max-content !important;animation:marquee 52s linear infinite}
+.logo-group{display:flex !important;flex-wrap:nowrap !important;justify-content:flex-start !important;width:auto !important;gap:80px !important;padding-right:80px}
+.logo-viewport:hover .logo-track{animation-play-state:paused}
+@media (max-width: 760px){
+.logo-track{animation-duration:32s}
+.logo-group{gap:48px !important;padding-right:48px}
+}
+.rise{animation:fadeup .7s ease-out backwards}
+.ln{fill:none;stroke-linecap:round}
+.ln-base{stroke-width:1.5;stroke-dasharray:1;animation:draw .7s ease-out backwards}
+.ln-flow{stroke-width:4;stroke-dasharray:0 .1;animation:flow 1.4s linear infinite,fadein .4s ease-out backwards}
+.ln-slow{animation-duration:2.4s,.4s}
+.chip{transform-box:fill-box;transform-origin:center;animation-duration:9s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+.c1{animation-name:c1}.c2{animation-name:c2}.c3{animation-name:c3}.c4{animation-name:c4}.c5{animation-name:c5}.c6{animation-name:c6}.c7{animation-name:c7}
+.ph-chaos{animation:phChaos 9s infinite}
+.ph-order{opacity:0;animation:phOrder 9s infinite}
+.messy{fill:none;stroke-width:1.5;stroke-dasharray:5 7;animation:phChaos 9s infinite,crawl 1s linear infinite}
+.ph-draw{fill:none;stroke-linecap:round;stroke-width:1.5;stroke-dasharray:1;animation:phDraw 9s infinite}
+.ph-draw2{fill:none;stroke-linecap:round;stroke-width:1.5;stroke-dasharray:1;animation:phDraw2 9s infinite}
+.ph-flow{fill:none;stroke-linecap:round;stroke-width:4;stroke-dasharray:0 .1;opacity:0;animation:flow 1.4s linear infinite,phFlow 9s infinite}
+.ph-hub{transform-box:fill-box;transform-origin:center;animation:phHub 9s infinite}
+.ring2{fill:none;stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center;animation:ring 1.8s ease-out infinite}
+.cap{font-size:12px;font-weight:600;font-family:inherit;letter-spacing:.06em}
+.focus{animation:focus 9s infinite}
+.chip-bg{stroke-width:1}
+.chip-tx{font-size:12px;font-weight:500;font-family:inherit;text-anchor:middle}
+.chip-dot{animation:blink 1.4s ease-in-out infinite}
+.hub{transform-box:fill-box;transform-origin:center;animation:pop .6s cubic-bezier(.3,1.6,.5,1) backwards}
+.ring{fill:none;stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+.db{fill:none;stroke-width:2.5;stroke-linecap:round}
+.bar{transform-origin:bottom;animation:grow .8s cubic-bezier(.2,.8,.2,1) backwards,breathe 3.2s ease-in-out infinite}
+.live{animation:blink 1.2s ease-in-out infinite}
+.drawloop{stroke-dasharray:1;animation:drawloop 3.2s ease-in-out infinite}
+@keyframes fadeup{from{opacity:0;transform:translateY(10px)}}
+@keyframes fadein{from{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes flow{from{stroke-dashoffset:0}to{stroke-dashoffset:-.1}}
+@keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes pop{from{transform:scale(0);opacity:0}}
+@keyframes ring{0%{transform:scale(1);opacity:.55}100%{transform:scale(2);opacity:0}}
+@keyframes grow{from{transform:scaleY(0)}}
+@keyframes breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.84)}}
+@keyframes drawloop{0%{stroke-dashoffset:1}55%,100%{stroke-dashoffset:0}}
+@keyframes phChaos{0%,32%{opacity:1}42%,92%{opacity:0}100%{opacity:1}}
+@keyframes phOrder{0%,44%{opacity:0}52%,90%{opacity:1}98%,100%{opacity:0}}
+@keyframes phFlow{0%,52%{opacity:0}58%,90%{opacity:1}96%,100%{opacity:0}}
+@keyframes phDraw{0%,42%{stroke-dashoffset:1;opacity:1}52%,90%{stroke-dashoffset:0;opacity:1}97%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes phDraw2{0%,52%{stroke-dashoffset:1;opacity:1}60%,90%{stroke-dashoffset:0;opacity:1}97%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes phHub{0%,44%{transform:scale(0);opacity:0}50%{transform:scale(1.12);opacity:1}54%,90%{transform:scale(1);opacity:1}97%,100%{transform:scale(0);opacity:0}}
+@keyframes focus{0%,40%{opacity:0;transform:scale(.94)}54%,90%{opacity:1;transform:none}98%,100%{opacity:0;transform:scale(.94)}}
+.rep{opacity:0;transform-origin:center;animation-duration:9s;animation-iteration-count:infinite;animation-timing-function:ease-out}
+.rep1{animation-name:rep1}.rep2{animation-name:rep2}.rep3{animation-name:rep3}
+@keyframes rep1{0%,2%{opacity:0;transform:translateY(18px) rotate(-6deg) scale(.92)}6%{opacity:1;transform:rotate(-6deg)}20%{opacity:1;transform:translateY(-3px) rotate(-8deg)}34%{opacity:1;transform:rotate(-6deg)}44%,100%{opacity:0;transform:translateX(86%) scale(.8)}}
+@keyframes rep2{0%,10%{opacity:0;transform:translateY(18px) rotate(3deg) scale(.92)}14%{opacity:1;transform:rotate(3deg)}24%{opacity:1;transform:translateY(-3px) rotate(5deg)}34%{opacity:1;transform:rotate(3deg)}44%,100%{opacity:0;transform:scale(.8)}}
+@keyframes rep3{0%,18%{opacity:0;transform:translateY(18px) rotate(8deg) scale(.92)}22%{opacity:1;transform:rotate(8deg)}28%{opacity:1;transform:translateY(-3px) rotate(6deg)}34%{opacity:1;transform:rotate(8deg)}44%,100%{opacity:0;transform:translateX(-86%) scale(.8)}}
+@keyframes crawl{to{stroke-dashoffset:-24}}
+@keyframes c1{0%,34%,100%{transform:translate(220px,-164px) rotate(12deg)}12%{transform:translate(230px,-154px) rotate(18deg)}24%{transform:translate(212px,-172px) rotate(7deg)}46%,90%{transform:none}}
+@keyframes c2{0%,34%,100%{transform:translate(-140px,-220px) rotate(-18deg)}12%{transform:translate(-148px,-212px) rotate(-12deg)}24%{transform:translate(-132px,-226px) rotate(-22deg)}46%,90%{transform:none}}
+@keyframes c3{0%,34%,100%{transform:translate(-240px,-74px) rotate(9deg)}12%{transform:translate(-232px,-84px) rotate(3deg)}24%{transform:translate(-248px,-68px) rotate(14deg)}46%,90%{transform:none}}
+@keyframes c4{0%,34%,100%{transform:translate(314px,66px) rotate(-10deg)}12%{transform:translate(304px,58px) rotate(-16deg)}24%{transform:translate(320px,72px) rotate(-5deg)}46%,90%{transform:none}}
+@keyframes c5{0%,34%,100%{transform:translate(-284px,-54px) rotate(16deg)}12%{transform:translate(-276px,-46px) rotate(22deg)}24%{transform:translate(-292px,-60px) rotate(11deg)}46%,90%{transform:none}}
+@keyframes c6{0%,34%,100%{transform:translate(354px,-18px) rotate(-7deg)}12%{transform:translate(346px,-26px) rotate(-1deg)}24%{transform:translate(360px,-10px) rotate(-12deg)}46%,90%{transform:none}}
+@keyframes c7{0%,34%,100%{transform:translate(-154px,192px) rotate(21deg)}12%{transform:translate(-146px,184px) rotate(15deg)}24%{transform:translate(-162px,198px) rotate(26deg)}46%,90%{transform:none}}
+.rowg,.cell{animation-duration:9s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+.cell{transform-box:fill-box;transform-origin:center}
+.r1{animation-name:r1}.r2{animation-name:r2}.r3{animation-name:r3}
+.k1{animation-name:k1}.k2{animation-name:k2}.k3{animation-name:k3}.k4{animation-name:k4}.k5{animation-name:k5}.k6{animation-name:k6}
+.scan{opacity:0;animation:scan 9s infinite}
+@keyframes r1{0%,34%,100%{transform:translate(40px,100px)}17%{transform:translate(52px,90px)}46%,90%{transform:none}}
+@keyframes r2{0%,34%,100%{transform:translate(-30px,-60px)}17%{transform:translate(-42px,-50px)}46%,90%{transform:none}}
+@keyframes r3{0%,34%,100%{transform:translate(20px,-20px)}17%{transform:translate(10px,-8px)}46%,90%{transform:none}}
+@keyframes k1{0%,34%,100%{transform:translate(-100px,-60px) rotate(25deg)}12%{transform:translate(-92px,-70px) rotate(40deg)}24%{transform:translate(-108px,-52px) rotate(15deg)}46%,90%{transform:none}}
+@keyframes k2{0%,34%,100%{transform:translate(120px,40px) rotate(-30deg)}12%{transform:translate(110px,50px) rotate(-45deg)}24%{transform:translate(128px,32px) rotate(-20deg)}46%,90%{transform:none}}
+@keyframes k3{0%,34%,100%{transform:translate(-40px,110px) rotate(45deg)}12%{transform:translate(-30px,100px) rotate(60deg)}24%{transform:translate(-48px,116px) rotate(35deg)}46%,90%{transform:none}}
+@keyframes k4{0%,34%,100%{transform:translate(90px,-70px) rotate(-15deg)}12%{transform:translate(98px,-60px) rotate(-30deg)}24%{transform:translate(82px,-76px) rotate(-5deg)}46%,90%{transform:none}}
+@keyframes k5{0%,34%,100%{transform:translate(-150px,20px) rotate(60deg)}12%{transform:translate(-140px,10px) rotate(75deg)}24%{transform:translate(-156px,28px) rotate(50deg)}46%,90%{transform:none}}
+@keyframes k6{0%,34%,100%{transform:translate(60px,100px) rotate(-40deg)}12%{transform:translate(50px,92px) rotate(-55deg)}24%{transform:translate(66px,108px) rotate(-30deg)}46%,90%{transform:none}}
+@keyframes scan{0%,56%{transform:translateX(0);opacity:0}60%{opacity:.45}86%{transform:translateX(306px);opacity:.45}90%,100%{transform:translateX(306px);opacity:0}}
+.sb-line{fill:none;stroke-width:1.25;stroke-linecap:round;stroke-dasharray:1;animation:draw 1s ease-out backwards}
+.sb-flow{fill:none;stroke-linecap:round;stroke-width:3;stroke-dasharray:0 .34;opacity:.85;animation:sbflow 3.6s linear infinite,fadein .8s ease-out backwards}
+.sb-ring{fill:none;stroke-width:1;opacity:0;transform-box:fill-box;transform-origin:center;animation:sbring 3.6s ease-out infinite}
+.sb-hub{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(.3,1.4,.5,1) backwards}
+.sb-pill{animation:fadeup .6s ease-out backwards}
+.sb-tx{font-size:11px;font-weight:500;font-family:inherit;text-anchor:middle}
+.sb-cap{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-family:inherit;text-anchor:middle;animation:fadein .8s ease-out backwards}
+.sb-bar{transform-box:fill-box;transform-origin:bottom;animation:grow .8s cubic-bezier(.2,.8,.2,1) backwards,breathe 3.6s ease-in-out infinite}
+@keyframes sbflow{from{stroke-dashoffset:0}to{stroke-dashoffset:-.34}}
+@keyframes sbring{0%{transform:scale(1);opacity:.35}100%{transform:scale(1.8);opacity:0}}
+.cl-tg{fill:none;stroke-width:1.25;stroke-linecap:round;stroke-dasharray:1;opacity:.75;animation:clTg 11s linear infinite}
+.cl-tf{fill:none;stroke-linecap:round;stroke-width:3;stroke-dasharray:0 .5;opacity:0;animation:sbflow 3s linear infinite,clTf 11s ease-in-out infinite}
+@keyframes clTf{0%,92%{opacity:.75}92.5%,97%{opacity:0}100%{opacity:.75}}
+.cl-warn{transform-box:fill-box;transform-origin:center;animation:clWarnIn 11s ease-in-out infinite}
+@keyframes clWarnIn{0%,92%{opacity:1;transform:scale(1)}92.5%,96%{opacity:0;transform:scale(.4)}100%{opacity:1;transform:scale(1)}}
+.cl-cl{fill:none;stroke-width:1.25;stroke-linecap:round}
+.cl-fl{fill:none;stroke-linecap:round;stroke-width:3;stroke-dasharray:0 .34;opacity:0;animation:sbflow 2.4s linear infinite,clFl 11s ease-in-out infinite}
+.cl-clip{animation:clWipe 11s ease-in-out infinite}
+.cl-wipe{opacity:0;animation:clWipe 11s ease-in-out infinite,clLine 11s linear infinite}
+.cl-after{animation:clAfter 11s ease-in-out infinite}
+.cl-ring{fill:none;stroke-width:1;opacity:0;transform-box:fill-box;transform-origin:center;animation:sbring 3.6s ease-out infinite}
+.cl-b{transform-box:fill-box;transform-origin:bottom;animation-duration:11s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+.cl-b1{animation-name:clB1}.cl-b2{animation-name:clB2}.cl-b3{animation-name:clB3}.cl-b4{animation-name:clB4}.cl-b5{animation-name:clB5}
+@keyframes clWipe{0%,36%{transform:translateX(0)}54%,92.9%{transform:translateX(560px)}93%,100%{transform:translateX(0)}}
+@keyframes clLine{0%,35%{opacity:0}37%,52%{opacity:1}55%,100%{opacity:0}}
+@keyframes clAfter{0%,30%{opacity:0}31%,86%{opacity:1}92%,100%{opacity:0}}
+@keyframes clTg{0%,92%{stroke-dashoffset:0;opacity:.75}92.5%{stroke-dashoffset:1;opacity:.75}100%{stroke-dashoffset:0;opacity:.75}}
+@keyframes clFl{0%,100%{opacity:.85}}
+@keyframes clB1{0%,42%{transform:scaleY(.8)}20%{transform:scaleY(.25)}54%,92%{transform:scaleY(.5)}100%{transform:scaleY(.8)}}
+@keyframes clB2{0%,42%{transform:scaleY(.2)}20%{transform:scaleY(.95)}54%,92%{transform:scaleY(.7)}100%{transform:scaleY(.2)}}
+@keyframes clB3{0%,42%{transform:scaleY(1)}20%{transform:scaleY(.4)}54%,92%{transform:scaleY(.6)}100%{transform:scaleY(1)}}
+@keyframes clB4{0%,42%{transform:scaleY(.35)}20%{transform:scaleY(.75)}54%,92%{transform:scaleY(.87)}100%{transform:scaleY(.35)}}
+@keyframes clB5{0%,42%{transform:scaleY(.55)}20%{transform:scaleY(.15)}54%,92%{transform:scaleY(1)}100%{transform:scaleY(.55)}}
+@media (prefers-reduced-motion: reduce){.cl-clip{transform:translateX(560px) !important}.cl-after{opacity:1 !important}}
+.card{text-decoration:none;color:#0E1726;background:#FFFFFF;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;border:1px solid #DCE2EC;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{opacity:1;transform:translateY(-3px);box-shadow:0 14px 32px rgba(14,23,38,.08)}
+.card .meta{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#1F4FD1}
+.card .t{font-weight:700;font-size:21px;line-height:1.3;letter-spacing:-.01em}
+.card .x{font-size:15px;line-height:1.6;color:#384152;margin:0}
+.card .d{font-size:14px;color:#566074;margin-top:auto}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}.ph-chaos,.messy,.scan,.rep{opacity:0}.ph-order,.ph-flow{opacity:1}}
+</style>
+</head>
+<body>
+<div class="pf" style="color: #0E1726; background: #F4F6FA; width: 100%; font-family: Geist, sans-serif">
+<div style="margin: 0; font-family: Geist, sans-serif">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #282B47; background: #282B47">
+<nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" aria-label="Pentify Insights home" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<img src="/assets/logo-white.png" alt="" style="width: 32px; height: 32px; object-fit: contain">
+<span style="font-family: Quicksand, sans-serif; font-weight: 300; font-size: 18px; line-height: 1; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap">Pentify Insights</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a class="navlink" href="/about/" style="color: #D4D6E6; text-decoration: none">About</a>
+<a class="navlink" href="/services/" style="color: #D4D6E6; text-decoration: none">Services</a>
+<a class="navlink" href="/partners/" style="color: #D4D6E6; text-decoration: none">For Partners</a>
+<a class="navlink" href="/blog/" style="color: #D4D6E6; text-decoration: none">Blog</a>
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="navcta" style="background: #FFFFFF; color: #282B47; text-decoration: none; padding: 12px 20px; border-radius: 999px; min-height: 20px">Book a call</a>
+<details class="mnav"><summary aria-label="Menu"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="bars" d="M4 7h16M4 12h16M4 17h16"></path><path class="x" d="M6 6l12 12M18 6L6 18"></path></svg></summary><div class="mnav-panel" style="background: #282B47; border: 1px solid #282B47"><a href="/about/" style="color: #FFFFFF">About</a><a href="/services/" style="color: #FFFFFF">Services</a><a href="/partners/" style="color: #FFFFFF">For Partners</a><a href="/blog/" style="color: #FFFFFF">Blog</a><a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="mcta" style="background: #FFFFFF; color: #282B47">Book a call</a></div></details>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="max-width: 1240px; margin: 0 auto; min-height: 640px; box-sizing: border-box; padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 32px) clamp(48px, 7vw, 80px); display: flex; flex-wrap: wrap; gap: 64px; align-items: center; align-content: center">
+<div class="rise" style="flex: 1 1 540px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<h1 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em"><span style="white-space: nowrap">Fewer reports.</span> <span style="white-space: nowrap">Better decisions.</span></h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #384152; max-width: 560px">Leaders need more insights, not more information. Pentify manages your data to keep your team accountable and focused on solving problems, not finding them.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" style="background: #2457E6; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 999px">Book a free call</a>
+</div>
+</div>
+
+
+
+<!-- Hero visual (clean up): a wipe sweeps left to right, turning tangled point-to-point wiring into one warehouse and one dashboard -->
+<div class="hero-vis" aria-hidden="true" style="flex: 1 1 540px; min-width: 0">
+<svg viewBox="0 0 520 362" style="width: 100%; height: auto; display: block; overflow: visible">
+<defs>
+<clipPath id="clAfter"><rect class="cl-clip" x="-620" y="-40" width="600" height="442"></rect></clipPath>
+<clipPath id="clBefore"><rect class="cl-clip" x="-20" y="-40" width="600" height="442"></rect></clipPath>
+</defs>
+<!-- Before: tangled -->
+<g clip-path="url(#clBefore)">
+<path class="cl-tg" stroke="#F07167" pathLength="1" d="M106 34 C 180 144, 200 142, 245 262 S 330 270, 376 210"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 76 C 180 -14, 200 206, 245 96 S 330 85, 376 140"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 118 C 180 258, 200 210, 245 300 S 330 273, 376 228"></path>
+<path class="cl-tg" stroke="#F07167" pathLength="1" d="M106 160 C 180 40, 200 170, 245 40 S 330 103, 376 168"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 202 C 180 302, 200 100, 245 210 S 330 183, 376 128"></path>
+<path class="cl-tg" stroke="#F07167" pathLength="1" d="M106 244 C 180 114, 200 240, 245 150 S 330 191, 376 236"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 286 C 180 226, 200 450, 245 330 S 330 90, 376 150"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 328 C 180 448, 200 -30, 245 70 S 330 240, 376 190"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 34 C 200 4, 200 148, 106 118"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 76 C 230 46, 230 274, 106 244"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 160 C 190 130, 190 358, 106 328"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 202 C 250 172, 250 316, 106 286"></path>
+<path class="cl-tg" stroke="#CBD3E0" pathLength="1" d="M106 118 C 170 88, 170 316, 106 286"></path>
+<path class="cl-tf" stroke="#F07167" pathLength="1" d="M106 34 C 180 144, 200 142, 245 262 S 330 270, 376 210" style="animation-duration: 3.1s, 11s; animation-delay: 0.00s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 76 C 180 -14, 200 206, 245 96 S 330 85, 376 140" style="animation-duration: 2.2s, 11s; animation-delay: 0.37s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 118 C 180 258, 200 210, 245 300 S 330 273, 376 228" style="animation-duration: 3.8s, 11s; animation-delay: 0.74s, 0s"></path>
+<path class="cl-tf" stroke="#F07167" pathLength="1" d="M106 160 C 180 40, 200 170, 245 40 S 330 103, 376 168" style="animation-duration: 2.6s, 11s; animation-delay: 1.11s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 202 C 180 302, 200 100, 245 210 S 330 183, 376 128" style="animation-duration: 3.4s, 11s; animation-delay: 1.48s, 0s"></path>
+<path class="cl-tf" stroke="#F07167" pathLength="1" d="M106 244 C 180 114, 200 240, 245 150 S 330 191, 376 236" style="animation-duration: 2.0s, 11s; animation-delay: 0.35s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 286 C 180 226, 200 450, 245 330 S 330 90, 376 150" style="animation-duration: 2.9s, 11s; animation-delay: 0.72s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 328 C 180 448, 200 -30, 245 70 S 330 240, 376 190" style="animation-duration: 3.6s, 11s; animation-delay: 1.09s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 34 C 200 4, 200 148, 106 118" style="animation-duration: 4.2s, 11s; animation-delay: 1.46s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 76 C 230 46, 230 274, 106 244" style="animation-duration: 3.3s, 11s; animation-delay: 0.33s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 160 C 190 130, 190 358, 106 328" style="animation-duration: 2.7s, 11s; animation-delay: 0.70s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 202 C 250 172, 250 316, 106 286" style="animation-duration: 3.9s, 11s; animation-delay: 1.07s, 0s"></path>
+<path class="cl-tf" stroke="#2457E6" pathLength="1" d="M106 118 C 170 88, 170 316, 106 286" style="animation-duration: 2.4s, 11s; animation-delay: 1.44s, 0s"></path>
+</g>
+<!-- After: centralised -->
+<g class="cl-after" clip-path="url(#clAfter)">
+<path class="cl-cl" stroke="#CBD3E0" d="M106 34 C 170 34, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 76 C 170 76, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 118 C 170 118, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 160 C 170 160, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 202 C 170 202, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 244 C 170 244, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 286 C 170 286, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M106 328 C 170 328, 182 180, 213 180"></path>
+<path class="cl-cl" stroke="#CBD3E0" d="M269 180 L376 180"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 34 C 170 34, 182 180, 213 180" style="animation-delay: 0s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 76 C 170 76, 182 180, 213 180" style="animation-delay: 0.9s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 118 C 170 118, 182 180, 213 180" style="animation-delay: 0.4s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 160 C 170 160, 182 180, 213 180" style="animation-delay: 1.3s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 202 C 170 202, 182 180, 213 180" style="animation-delay: 0.7s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 244 C 170 244, 182 180, 213 180" style="animation-delay: 1.6s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 286 C 170 286, 182 180, 213 180" style="animation-delay: 0.2s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M106 328 C 170 328, 182 180, 213 180" style="animation-delay: 1.1s, 0s"></path>
+<path class="cl-fl" stroke="#2457E6" pathLength="1" d="M269 180 L376 180" style="stroke-dasharray: 0 .5; animation-delay: .5s, 0s"></path>
+<circle class="cl-ring" cx="241" cy="180" r="28" stroke="#2457E6"></circle>
+<circle cx="241" cy="180" r="28" fill="#2457E6"></circle>
+<image href="/assets/logo-mark-hero.png" x="226" y="163.4" width="30" height="30" preserveAspectRatio="xMidYMid meet"></image>
+</g>
+<!-- Wipe line -->
+<g class="cl-wipe"><rect x="-26" y="0" width="12" height="362" rx="6" fill="#2457E6" opacity=".12"></rect><rect x="-21.5" y="0" width="3" height="362" rx="1.5" fill="#2457E6"></rect></g>
+<g class="sb-pill" style="animation-delay: 0.00s"><rect x="10" y="20" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="38">CRM</text></g>
+<g class="sb-pill" style="animation-delay: 0.05s"><rect x="10" y="62" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="80">Accounting</text></g>
+<g class="sb-pill" style="animation-delay: 0.10s"><rect x="10" y="104" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="122">Spreadsheets</text></g>
+<g class="sb-pill" style="animation-delay: 0.15s"><rect x="10" y="146" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="164">Inventory</text></g>
+<g class="sb-pill" style="animation-delay: 0.20s"><rect x="10" y="188" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="206">E-commerce</text></g>
+<g class="sb-pill" style="animation-delay: 0.25s"><rect x="10" y="230" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="248">Operations</text></g>
+<g class="sb-pill" style="animation-delay: 0.30s"><rect x="10" y="272" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="290">Marketing</text></g>
+<g class="sb-pill" style="animation-delay: 0.35s"><rect x="10" y="314" width="96" height="28" rx="14" fill="#FFFFFF" stroke="#DCE2EC"></rect><text class="sb-tx" fill="#384152" x="58" y="332">Paid media</text></g>
+<g class="sb-pill" style="animation-delay: .4s">
+<rect x="376" y="114" width="136" height="132" rx="16" fill="#FFFFFF" stroke="#DCE2EC"></rect>
+<rect x="392" y="132" width="72" height="7" rx="3.5" fill="#CBD3E0"></rect>
+<rect x="392" y="145" width="44" height="7" rx="3.5" fill="#DCE2EC"></rect>
+<rect class="cl-b cl-b1" x="392" y="170" width="16" height="60" rx="4" fill="#CBD3E0"></rect>
+<rect class="cl-b cl-b2" x="414" y="170" width="16" height="60" rx="4" fill="#CBD3E0"></rect>
+<rect class="cl-b cl-b3" x="436" y="170" width="16" height="60" rx="4" fill="#CBD3E0"></rect>
+<rect class="cl-b cl-b4" x="458" y="170" width="16" height="60" rx="4" fill="#CBD3E0"></rect>
+<rect class="cl-b cl-b5" x="480" y="170" width="16" height="60" rx="4" fill="#2457E6"></rect>
+</g>
+<g clip-path="url(#clBefore)"><g class="cl-warn"><circle cx="512" cy="114" r="11" fill="#F07167"></circle><rect x="510.8" y="107.5" width="2.4" height="8" rx="1.2" fill="#FFFFFF"></rect><circle cx="512" cy="119.6" r="1.4" fill="#FFFFFF"></circle></g></g>
+<g class="cl-after" clip-path="url(#clAfter)"><circle cx="512" cy="114" r="11" fill="#2457E6"></circle><path d="M507 114 l3.4 3.4 l6 -6.6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+</svg>
+</div>
+
+
+
+</section>
+
+<!-- CLIENT LOGOS -->
+<section aria-label="Clients" style="max-width: 1240px; margin: 0 auto; padding: 8px clamp(20px, 5vw, 32px) clamp(72px, 10vw, 120px); display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #566074">Trusted by growing businesses</p>
+<div class="logo-viewport" style="opacity: 0.85">
+<div class="logo-track" style="display: flex; width: 100%">
+<div class="logo-group" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px; width: 100%">
+<img src="/assets/clients/collaborate.png" alt="Collaborate" style="height: 34px; width: auto">
+<img src="/assets/clients/leaselab.png" alt="LeaseLab" style="height: 24px; width: auto">
+<img src="/assets/clients/love-and-co.png" alt="Love &amp; Co" style="height: 24px; width: auto">
+<img src="/assets/clients/rhombus.png" alt="Rhombus Enterprises" style="height: 56px; width: auto">
+<img src="/assets/clients/stadiums-tasmania.png" alt="Stadiums Tasmania" style="height: 44px; width: auto">
+<img src="/assets/clients/betashares.png" alt="Betashares" style="height: 30px; width: auto">
+<img src="/assets/clients/entireti.png" alt="Entireti" style="height: 30px; width: auto">
+<img src="/assets/clients/resimax.png" alt="Resimax Group" style="height: 44px; width: auto">
+</div>
+<div class="logo-group logo-dup" aria-hidden="true" style="align-items: center">
+<img src="/assets/clients/collaborate.png" alt="" style="height: 34px; width: auto">
+<img src="/assets/clients/leaselab.png" alt="" style="height: 24px; width: auto">
+<img src="/assets/clients/love-and-co.png" alt="" style="height: 24px; width: auto">
+<img src="/assets/clients/rhombus.png" alt="" style="height: 56px; width: auto">
+<img src="/assets/clients/stadiums-tasmania.png" alt="" style="height: 44px; width: auto">
+<img src="/assets/clients/betashares.png" alt="" style="height: 30px; width: auto">
+<img src="/assets/clients/entireti.png" alt="" style="height: 30px; width: auto">
+<img src="/assets/clients/resimax.png" alt="" style="height: 44px; width: auto">
+</div>
+<div class="logo-group logo-dup" aria-hidden="true" style="align-items: center">
+<img src="/assets/clients/collaborate.png" alt="" style="height: 34px; width: auto">
+<img src="/assets/clients/leaselab.png" alt="" style="height: 24px; width: auto">
+<img src="/assets/clients/love-and-co.png" alt="" style="height: 24px; width: auto">
+<img src="/assets/clients/rhombus.png" alt="" style="height: 56px; width: auto">
+<img src="/assets/clients/stadiums-tasmania.png" alt="" style="height: 44px; width: auto">
+<img src="/assets/clients/betashares.png" alt="" style="height: 30px; width: auto">
+<img src="/assets/clients/entireti.png" alt="" style="height: 30px; width: auto">
+<img src="/assets/clients/resimax.png" alt="" style="height: 44px; width: auto">
+</div>
+<div class="logo-group logo-dup" aria-hidden="true" style="align-items: center">
+<img src="/assets/clients/collaborate.png" alt="" style="height: 34px; width: auto">
+<img src="/assets/clients/leaselab.png" alt="" style="height: 24px; width: auto">
+<img src="/assets/clients/love-and-co.png" alt="" style="height: 24px; width: auto">
+<img src="/assets/clients/rhombus.png" alt="" style="height: 56px; width: auto">
+<img src="/assets/clients/stadiums-tasmania.png" alt="" style="height: 44px; width: auto">
+<img src="/assets/clients/betashares.png" alt="" style="height: 30px; width: auto">
+<img src="/assets/clients/entireti.png" alt="" style="height: 30px; width: auto">
+<img src="/assets/clients/resimax.png" alt="" style="height: 44px; width: auto">
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 10vw, 112px) clamp(20px, 5vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; flex: 1 1 auto; min-width: 0">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F4FD1">Developing a data asset</p>
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(34px, 5.5vw, 48px); line-height: 1.08; letter-spacing: -0.03em">Plan it, build it, use it.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #384152; max-width: none">Seven services on one data foundation. Start with one, or let us handle it end to end.</p>
+</div>
+<a href="/services/" style="font-weight: 600; font-size: 16px; text-decoration: none; color: #0E1726; border-bottom: 2px solid #0E1726; padding-bottom: 4px">See all services →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(32px, 4vw, 48px)">
+
+<div style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #566074">01</span>
+<div style="display: flex; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 2px solid #0E1726"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#2457E6" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; flex-shrink: 0; stroke-width: 1.6"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.5"></circle></svg><h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Plan</h3></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #384152">Agree what to measure, who owns it and what to build first.</p>
+<div style="display: flex; flex-direction: column; margin-top: 4px">
+<a href="/services/#data-strategy" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; border-bottom: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>Data strategy</span><span style="color: #2457E6">→</span></a>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #566074">02</span>
+<div style="display: flex; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 2px solid #0E1726"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#2457E6" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; flex-shrink: 0; stroke-width: 1.6"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"></ellipse><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"></path></svg><h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Build</h3></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #384152">Collect the right data and get it into one clean, reliable warehouse.</p>
+<div style="display: flex; flex-direction: column; margin-top: 4px">
+<a href="/services/#tracking" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>Event collection</span><span style="color: #2457E6">→</span></a>
+<a href="/services/#dataops" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>DataOps</span><span style="color: #2457E6">→</span></a>
+<a href="/services/#data-migrations" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; border-bottom: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>Data migrations</span><span style="color: #2457E6">→</span></a>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #1F4FD1">03</span>
+<div style="display: flex; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 2px solid #2457E6"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#2457E6" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; flex-shrink: 0; stroke-width: 1.6"><path d="M4 20h16M7 16v-5M11 16V7M15 16v-3M19 16V9"></path></svg><h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Use</h3></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #384152">Report on it, prove what's working and automate the busywork.</p>
+<div style="display: flex; flex-direction: column; margin-top: 4px">
+<a href="/services/#dashboards" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>Dashboards &amp; reporting</span><span style="color: #2457E6">→</span></a>
+<a href="/services/#attribution" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>Attribution &amp; measurement</span><span style="color: #2457E6">→</span></a>
+<a href="/services/#automation" style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #DCE2EC; border-bottom: 1px solid #DCE2EC; text-decoration: none; font-weight: 500; color: #0E1726"><span>Workflow automation</span><span style="color: #2457E6">→</span></a>
+</div>
+</div>
+</div>
+
+<!-- Fractional data team: how to engage -->
+<div id="daas" style="background: #0E1726; color: #FFFFFF; border-radius: 24px; padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8FB3FF">Fractional Data Team</p>
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(24px, 3vw, 30px); letter-spacing: -0.02em">Need an ongoing partner?</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D2D9E5; max-width: 620px">Get a data team on a monthly plan. We run your pipelines, dashboards and reporting, and support your team as new questions come up, without the cost of hiring.</p>
+</div>
+<a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" style="background: #8FB3FF; color: #0E1726; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 999px; white-space: nowrap">Talk to us about fractional services</a>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 32px) clamp(72px, 10vw, 112px); display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(28px, 4vw, 36px); letter-spacing: -0.02em">How we work</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 32px">
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #0E1726; padding-top: 20px">
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">1. Discover</span>
+<span style="font-size: 16px; line-height: 1.55; color: #384152">A free call and quick assessment to understand your goals and current data.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #0E1726; padding-top: 20px">
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">2. Connect</span>
+<span style="font-size: 16px; line-height: 1.55; color: #384152">We integrate and clean your sources into one trusted foundation.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #0E1726; padding-top: 20px">
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">3. Deliver</span>
+<span style="font-size: 16px; line-height: 1.55; color: #384152">Dashboards and insights your team uses to make faster decisions.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #2457E6; padding-top: 20px">
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">4. Evolve</span>
+<span style="font-size: 16px; line-height: 1.55; color: #384152">Ongoing support as your business and questions grow.</span>
+</li>
+</ol>
+</section>
+
+<!-- ASSESSMENT BAND -->
+<section id="assessment" style="background: #2457E6; color: #FFFFFF; position: relative; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 600 300" preserveAspectRatio="xMaxYMid slice" style="position: absolute; right: 0; top: 0; width: 60%; height: 100%; opacity: 0.28">
+<path class="ln" stroke="#FFFFFF" style="stroke-width: 1" d="M0 20 L520 150 M0 90 L520 150 M0 160 L520 150 M0 230 L520 150 M0 290 L520 150"></path>
+<path class="ln ln-flow" pathLength="1" stroke="#FFFFFF" d="M0 20 L520 150" style="stroke-width: 3"></path>
+<path class="ln ln-flow ln-slow" pathLength="1" stroke="#FFFFFF" d="M0 90 L520 150" style="stroke-width: 3"></path>
+<path class="ln ln-flow" pathLength="1" stroke="#FFFFFF" d="M0 160 L520 150" style="stroke-width: 3; animation-delay: .4s, 0s"></path>
+<path class="ln ln-flow ln-slow" pathLength="1" stroke="#FFFFFF" d="M0 230 L520 150" style="stroke-width: 3; animation-delay: .7s, 0s"></path>
+<path class="ln ln-flow" pathLength="1" stroke="#FFFFFF" d="M0 290 L520 150" style="stroke-width: 3; animation-delay: .2s, 0s"></path>
+<circle class="ring" cx="520" cy="150" r="22" stroke="#FFFFFF"></circle>
+<circle cx="520" cy="150" r="22" fill="#FFFFFF"></circle>
+</svg>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: clamp(56px, 8vw, 88px) clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(32px, 5vw, 44px); line-height: 1.1; letter-spacing: -0.03em">Sitting on a data goldmine?</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #E3EBFF; max-width: 560px">Get a quick, jargon-free snapshot of your data maturity, and where the biggest wins are hiding.</p>
+</div>
+<a href="/assessment/" style="background: #FFFFFF; color: #0E1726; text-decoration: none; font-weight: 600; font-size: 17px; padding: 18px 30px; border-radius: 999px">Start the assessment →</a>
+</div>
+</section>
+
+<!-- TESTIMONIAL + TEAM -->
+<section id="testimonials" style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 10vw, 112px) clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; gap: 56px; align-items: stretch">
+<figure style="flex: 1 1 560px; min-width: 0; margin: 0; padding-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px clamp(32px, 6vw, 80px)">
+<div style="flex: 1 1 480px; min-width: 0; position: relative; align-self: center">
+<span aria-hidden="true" style="position: absolute; left: -4px; top: -52px; font-family: Manrope, sans-serif; font-size: 96px; line-height: 1; color: #2457E6">“</span>
+<blockquote style="margin: 0; font-family: Manrope, sans-serif; font-weight: 500; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.45; letter-spacing: -0.01em; max-width: 880px">Partnering with Pentify has already shown tangible benefits in our journey to become more data-driven. The results speak for themselves. Pentify have been invaluable in driving measurable growth and efficiency.</blockquote>
+</div>
+<figcaption style="flex: 0 0 auto; align-self: center; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding-left: clamp(0px, 3vw, 40px); border-left: 1px solid #DCE2EC">
+<img src="/assets/people/alex-davis.jpg" alt="Alex Davis" style="width: 112px; height: 112px; border-radius: 50%; object-fit: cover; object-position: center 30%">
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.01em">Alex Davis</span>
+<span style="color: #566074; font-size: 17px">CEO, LeaseLab</span>
+</span>
+</figcaption>
+</figure>
+</section>
+
+<!-- BLOG -->
+<section id="blog" style="background: #EAEEF5; border-top: 1px solid #DCE2EC">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 9vw, 104px) clamp(20px, 5vw, 32px); display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(32px, 5vw, 44px); letter-spacing: -0.03em">Insights for smarter decisions</h2>
+<a href="/blog/" style="font-weight: 600; font-size: 16px; text-decoration: none; color: #0E1726; border-bottom: 2px solid #0E1726; padding-bottom: 4px">Visit our blog →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 24px">
+<a class="card" href="/blog/from-silo-to-symphony-how-breaking-down-internal-barriers-doubles-data-impact/">
+<div aria-hidden="true" style="height: 200px; background: #282B47; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><rect x="92" y="58" width="36" height="96" rx="8" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="101" y="72" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="101" y="94" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="101" y="116" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="162" y="58" width="36" height="96" rx="8" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="171" y="72" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="171" y="94" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="171" y="116" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="232" y="58" width="36" height="96" rx="8" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></rect><rect x="241" y="72" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="241" y="94" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><rect x="241" y="116" width="18" height="8" rx="4" fill="rgba(255,255,255,.28)"></rect><path d="M60 106 H300" stroke="#8FB3FF" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 9"></path><circle cx="110" cy="106" r="6" fill="#8FB3FF"></circle><circle cx="180" cy="106" r="6" fill="#8FB3FF"></circle><circle cx="250" cy="106" r="6" fill="#8FB3FF"></circle></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Strategy</span>
+<span class="t" style="font-family: Manrope, sans-serif">From Silo to Symphony: How Breaking Down Internal Barriers Doubles Data Impact</span>
+<p class="x">Most organisations say they want to be data driven, but many never reach it. The biggest barrier is not technology. It is the walls inside the business.</p>
+<span class="d">14 October 2025 · 4 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/data-driven-leadership-how-founders-who-rely-only-on-themselves-block-growth/">
+<div aria-hidden="true" style="height: 200px; background: #2457E6; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><path d="M180 100 L255 130" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L182 163" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L107 133" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L105 70" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L178 37" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M180 100 L253 67" stroke="rgba(255,255,255,.28)" stroke-width="2"></path><path d="M255 130 L182 163" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M182 163 L107 133" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M107 133 L105 70" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M105 70 L178 37" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M178 37 L253 67" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><path d="M253 67 L255 130" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6"></path><circle cx="255" cy="130" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="255" cy="130" r="4" fill="#FFFFFF"></circle><circle cx="182" cy="163" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="182" cy="163" r="4" fill="#FFFFFF"></circle><circle cx="107" cy="133" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="107" cy="133" r="4" fill="#FFFFFF"></circle><circle cx="105" cy="70" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="105" cy="70" r="4" fill="#FFFFFF"></circle><circle cx="178" cy="37" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="178" cy="37" r="4" fill="#FFFFFF"></circle><circle cx="253" cy="67" r="12" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)"></circle><circle cx="253" cy="67" r="4" fill="#FFFFFF"></circle><circle cx="180" cy="100" r="20" fill="#FFFFFF"></circle></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Leadership</span>
+<span class="t" style="font-family: Manrope, sans-serif">Data-Driven Leadership: How Founders Who Rely Only on Themselves Block Growth</span>
+<p class="x">Most founders start with a clear vision and a belief that no one else can do things quite like they can. When that mindset doesn’t evolve, it quietly becomes a growth killer.</p>
+<span class="d">14 October 2025 · 7 min read</span>
+</div>
+</a>
+<a class="card" href="/blog/why-your-fast-growth-business-is-actually-fragile-the-hidden-data-fault-lines/">
+<div aria-hidden="true" style="height: 200px; background: #E3EBFF; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: hidden"><svg viewBox="0 0 360 200" style="width: 100%; max-width: 440px; height: auto; display: block; overflow: visible"><path d="M50 160 H310" stroke="#CBD3E0" stroke-width="2"></path><rect x="70" y="130" width="24" height="30" rx="5" fill="#CBD3E0"></rect><rect x="108" y="116" width="24" height="44" rx="5" fill="#CBD3E0"></rect><rect x="146" y="108" width="24" height="52" rx="5" fill="#CBD3E0"></rect><rect x="184" y="90" width="24" height="70" rx="5" fill="#CBD3E0"></rect><rect x="222" y="76" width="24" height="84" rx="5" fill="#CBD3E0"></rect><rect x="260" y="56" width="24" height="104" rx="5" fill="#2457E6"></rect><path d="M66 128 C 130 120, 190 92, 300 42" fill="none" stroke="#0E1726" stroke-width="3" stroke-linecap="round"></path><path d="M262 64 l-10 22 l14 8 l-12 26 l10 10 l-8 30" fill="none" stroke="#F07167" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span class="meta">Strategy</span>
+<span class="t" style="font-family: Manrope, sans-serif">Why Your ‘Fast-Growth’ Business is Actually Fragile: The Hidden Data Fault Lines</span>
+<p class="x">Revenue is climbing and the team is expanding. But systems don’t talk to each other, reports don’t match and no one really trusts the numbers.</p>
+<span class="d">23 September 2025 · 5 min read</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- NEWSLETTER + CTA -->
+<section id="book" style="background: #0E1726; color: #FFFFFF; position: relative; overflow: hidden">
+<img aria-hidden="true" src="/assets/logo-white.png" alt="" style="position: absolute; right: -120px; top: -60px; width: 560px; height: auto; opacity: 0.05; pointer-events: none">
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: clamp(64px, 9vw, 104px) clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: clamp(36px, 6vw, 52px); line-height: 1.05; letter-spacing: -0.035em">Let's make your data work harder.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #D2D9E5; max-width: 480px">A 30-minute call, no jargon, no obligation. We'll tell you honestly where we can help.</p>
+<div><a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" style="display: inline-block; background: #8FB3FF; color: #0E1726; text-decoration: none; font-weight: 600; font-size: 17px; padding: 18px 30px; border-radius: 999px">Book a call</a></div>
+</div>
+<form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="company_url" class="js-netlify" style="flex: 1 1 420px; min-width: 0; background: #182233; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<input type="hidden" name="form-name" value="newsletter"><p hidden><label>Leave blank <input name="company_url"></label></p>
+<p style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 22px">Get insights in your inbox</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #D2D9E5">Case studies, data news and practical tips for improving your bottom line.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #D2D9E5">First name
+<input type="text" name="first" style="font: inherit; font-size: 16px; padding: 13px 14px; border-radius: 10px; border: 1px solid #2F3C52; background: #0E1726; color: #FFFFFF">
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #D2D9E5">Last name
+<input type="text" name="last" style="font: inherit; font-size: 16px; padding: 13px 14px; border-radius: 10px; border: 1px solid #2F3C52; background: #0E1726; color: #FFFFFF">
+</label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #D2D9E5">Email
+<input type="email" name="email" style="font: inherit; font-size: 16px; padding: 13px 14px; border-radius: 10px; border: 1px solid #2F3C52; background: #0E1726; color: #FFFFFF">
+</label>
+<button type="submit" style="font: inherit; font-weight: 600; font-size: 16px; padding: 15px; border-radius: 999px; border: none; background: #FFFFFF; color: #0E1726; cursor: pointer">Join now</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #0E1726; color: #D2D9E5; border-top: 1px solid #253147">
+<div style="max-width: 1240px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px"><img src="/assets/logo-white.png" alt="" style="width: 32px; height: 32px; object-fit: contain"><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px; color: #FFFFFF">Pentify Insights</span></span>
+<span>Level 1, 9–12 Hood Street<br>Collingwood, Victoria 3066</span>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<a href="/about/" style="color: #D2D9E5; text-decoration: none">About</a>
+<a href="#services" style="color: #D2D9E5; text-decoration: none">What we do</a>
+<a href="#testimonials" style="color: #D2D9E5; text-decoration: none">Testimonials</a>
+<a href="/blog/" style="color: #D2D9E5; text-decoration: none">Blog</a>
+<a href="#book" style="color: #D2D9E5; text-decoration: none">Contact</a>
+<a href="https://www.linkedin.com/" style="color: #D2D9E5; text-decoration: none">LinkedIn</a>
+</nav>
+<span style="width: 100%; font-size: 13px; color: #95A1B6">© 2026 Pentify Insights. All rights reserved.</span>
+</div>
+</footer>
+
+</div>
+</div>
+<script>
+document.querySelectorAll('form.js-netlify').forEach(function (f) {
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(f)).toString() })
+      .then(function () { f.innerHTML = '<p style="margin:0;font-size:18px;line-height:1.5;color:#FFFFFF">Thanks, you\'re on the list.</p>'; })
+      .catch(function () { alert('Sorry, something went wrong. Please try again.'); });
+  });
+});
+</script>
+</body>
+</html>
