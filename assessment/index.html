@@ -55,6 +55,18 @@ a{color:inherit}a:hover{opacity:.85}
 .mnav-panel a{padding:13px 14px;border-radius:10px;text-decoration:none;font-size:16px;font-weight:500}
 .mnav-panel a.mcta{margin-top:6px;text-align:center;font-weight:600;border-radius:999px}
 @media (max-width: 760px){.navlink,.navcta{display:none !important}.mnav{display:block}}
+.intro{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(32px,6vw,80px)}
+.intro-copy{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.intro-card{flex:1 1 360px;min-width:0;max-width:460px;gap:0;padding:clamp(24px,4vw,36px)}
+.intro-card .eyebrow{margin-bottom:8px}
+.feat{display:flex;align-items:center;gap:16px;padding:18px 0;border-top:1px solid #DCE2EC}
+.intro-card .feat:first-of-type{border-top:0}
+.feat .ic{flex:none;width:44px;height:44px;border-radius:12px;background:#E3EBFF;display:flex;align-items:center;justify-content:center}
+.feat div{display:flex;flex-direction:column;gap:2px}
+.feat strong{font-family:Manrope,'Helvetica Neue',Arial,sans-serif;font-size:17px;color:#0E1726}
+.feat span{font-size:15px;color:#566074}
+.narrow{max-width:760px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+@media (max-width: 860px){.intro-card{max-width:none}}
 
 [data-step]{display:flex;flex-direction:column;gap:28px}
 [data-step][hidden]{display:none}
@@ -88,25 +100,30 @@ a{color:inherit}a:hover{opacity:.85}
 </header>
 
 <main class="wrap" style="padding-top: clamp(40px, 7vw, 88px); padding-bottom: clamp(56px, 8vw, 104px)">
-<div style="max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 28px">
 
 <!-- INTRO -->
 <div data-step="intro">
-<div style="display: flex; flex-direction: column; gap: 20px">
+<div class="intro">
+<div class="intro-copy">
 <p class="eyebrow">Data maturity assessment</p>
 <h1 style="margin: 0; font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em; text-wrap: balance">How ready is your data?</h1>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #384152">Answer eight quick questions and see where your business sits on the data maturity curve, with the next steps that will make the biggest difference.</p>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #384152; max-width: 520px">Answer eight quick questions to see where your business sits on the data maturity curve, and what will make the biggest difference next.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; padding-top: 8px">
+<button type="button" class="btn" data-act="start">Start the assessment →</button>
+<span style="font-size: 15px; color: #566074">Free · About 3 minutes</span>
 </div>
-<div class="panel">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 4px"><strong class="disp" style="font-size: 22px">8 questions</strong><span style="font-size: 15px; color: #566074">Multiple choice, no jargon</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><strong class="disp" style="font-size: 22px">About 3 minutes</strong><span style="font-size: 15px; color: #566074">Answer for your business today</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><strong class="disp" style="font-size: 22px">Instant results</strong><span style="font-size: 15px; color: #566074">Your stage and where to start</span></div>
 </div>
-<div><button type="button" class="btn" data-act="start">Start the assessment →</button></div>
+<div class="panel intro-card">
+<p class="eyebrow" style="color: #566074">What you'll get</p>
+<div class="feat"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#2457E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg></span><div><strong>8 quick questions</strong><span>Multiple choice, no jargon</span></div></div>
+<div class="feat"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#2457E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 16v-4M12 16V8M17 16v-7"/></svg></span><div><strong>Your maturity stage</strong><span>Where you sit on a four-stage curve</span></div></div>
+<div class="feat"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#2457E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><strong>Where to start</strong><span>The three changes worth making first</span></div></div>
+</div>
 </div>
 </div>
 <div data-step="q" hidden>
+<div class="narrow">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <div style="display: flex; justify-content: space-between; font-size: 14px; color: #566074"><span>Question <span data-f="qNum"></span> of <span data-f="qTotal"></span></span><span data-f="qArea"></span></div>
 <div class="bar"><span data-f="progress"></span></div>
@@ -120,7 +137,9 @@ a{color:inherit}a:hover{opacity:.85}
 </div>
 </div>
 </div>
+</div>
 <div data-step="lead" hidden>
+<div class="narrow">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <div style="display: flex; justify-content: space-between; font-size: 14px; color: #566074"><span>Nearly there</span><span>Your results</span></div>
 <div class="bar"><span style="width: 100%"></span></div>
@@ -144,7 +163,9 @@ a{color:inherit}a:hover{opacity:.85}
 <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #566074">We'll only use your details to send your results and occasional insights. Unsubscribe any time.</p>
 </form>
 </div>
+</div>
 <div data-step="result" hidden>
+<div class="narrow">
 <div style="display: flex; flex-direction: column; gap: 14px">
 <p class="eyebrow"><span data-f="greeting"></span></p>
 <h1 style="margin: 0; font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em; text-wrap: balance">Stage <span data-f="stageNum"></span>: <span data-f="stageName"></span></h1>
@@ -170,6 +191,7 @@ a{color:inherit}a:hover{opacity:.85}
 <a href="https://outlook.office.com/bookwithme/user/869046da27454bfc9edfb1539f2d8866%40pentifyinsights.com?anonymous&amp;ismsaljsauthenabled=true" target="_blank" rel="noopener" class="btn" style="background: #8FB3FF; color: #0E1726">Book a call</a>
 </div>
 <div><button type="button" class="ghost" data-act="restart">Retake the assessment</button></div>
+</div>
 </div>
 
 </div>
@@ -198,12 +220,12 @@ a{color:inherit}a:hover{opacity:.85}
 (function () {
   var Q = [
 { area: 'Data sources', text: 'Where does your business data live today?', service: 'DataOps', id: 'dataops', tip: 'Bring your sources into one warehouse so every report starts from the same data.', options: ['Mostly in spreadsheets and individual tools', 'A few connected tools, with lots of exports', 'Most sources feed into one central place', 'A governed warehouse that every tool draws on'] },
-{ area: 'Reporting', text: 'How do your reports get made?', service: 'Dashboards & reporting', id: 'dashboards', tip: 'Automate your recurring reports and free up hours every week.', options: ['By hand, when someone asks', 'Spreadsheets someone rebuilds each week', 'Dashboards for some teams', 'Automated dashboards everyone uses'] },
-{ area: 'Shared definitions', text: 'Do your teams agree on the numbers?', service: 'Data strategy', id: 'data-strategy', tip: 'Agree your core metrics and how each is calculated, once, for everyone.', options: ['Rarely. We debate whose number is right', 'Sometimes, depending on the report', 'Mostly, for our key metrics', 'Yes. Our metrics have written definitions'] },
-{ area: 'Tracking', text: 'How confident are you in your website and conversion tracking?', service: 'Event collection', id: 'tracking', tip: 'Fix your tracking so every conversion is captured and your ad platforms bid on real signals.', options: ['Not sure it works properly', 'Basic analytics only', 'We have a tracking plan, with some gaps', 'Server-side, consent-aware and checked regularly'] },
-{ area: 'Marketing ROI', text: 'Can you connect marketing spend to actual revenue?', service: 'Attribution & measurement', id: 'attribution', tip: 'Join spend to revenue so budget decisions rest on what really works.', options: ['No', 'Only through what the ad platforms report', 'For some channels, through our CRM', 'Yes, with attribution models or lift tests'] },
-{ area: 'Ownership', text: 'Who looks after your data?', service: 'Data strategy', id: 'data-strategy', tip: 'Give every key data set a clear owner and simple rules for access and quality.', options: ['No one in particular', 'Someone in marketing or ops, part time', 'A dedicated analyst', 'A data team with clear owners'] },
-{ area: 'Manual work', text: 'How much manual data work does your team do each week?', service: 'Workflow automation', id: 'automation', tip: 'Automate the copying and checking between tools so your team can focus on decisions.', options: ['A lot. Copying between tools is routine', 'A few hours of exports and fixes', 'Some, but most of it is automated', 'Very little. Our workflows are automated'] },
+{ area: 'Reporting', text: 'How do your reports get made?', service: 'Dashboards & Reporting', id: 'dashboards', tip: 'Automate your recurring reports and free up hours every week.', options: ['By hand, when someone asks', 'Spreadsheets someone rebuilds each week', 'Dashboards for some teams', 'Automated dashboards everyone uses'] },
+{ area: 'Shared definitions', text: 'Do your teams agree on the numbers?', service: 'Data Strategy', id: 'data-strategy', tip: 'Agree your core metrics and how each is calculated, once, for everyone.', options: ['Rarely. We debate whose number is right', 'Sometimes, depending on the report', 'Mostly, for our key metrics', 'Yes. Our metrics have written definitions'] },
+{ area: 'Tracking', text: 'How confident are you in your website and conversion tracking?', service: 'Event Collection', id: 'tracking', tip: 'Fix your tracking so every conversion is captured and your ad platforms bid on real signals.', options: ['Not sure it works properly', 'Basic analytics only', 'We have a tracking plan, with some gaps', 'Server-side, consent-aware and checked regularly'] },
+{ area: 'Marketing ROI', text: 'Can you connect marketing spend to actual revenue?', service: 'Attribution & Measurement', id: 'attribution', tip: 'Join spend to revenue so budget decisions rest on what really works.', options: ['No', 'Only through what the ad platforms report', 'For some channels, through our CRM', 'Yes, with attribution models or lift tests'] },
+{ area: 'Ownership', text: 'Who looks after your data?', service: 'Data Strategy', id: 'data-strategy', tip: 'Give every key data set a clear owner and simple rules for access and quality.', options: ['No one in particular', 'Someone in marketing or ops, part time', 'A dedicated analyst', 'A data team with clear owners'] },
+{ area: 'Manual work', text: 'How much manual data work does your team do each week?', service: 'Workflow Automation', id: 'automation', tip: 'Automate the copying and checking between tools so your team can focus on decisions.', options: ['A lot. Copying between tools is routine', 'A few hours of exports and fixes', 'Some, but most of it is automated', 'Very little. Our workflows are automated'] },
 { area: 'Reliability', text: 'When a data source breaks or changes, how do you find out?', service: 'DataOps', id: 'dataops', tip: 'Monitor your pipelines so problems are caught before anyone sees a wrong number.', options: ['When a report looks wrong', 'Someone checks manually', 'Some automatic alerts', 'Full monitoring with automatic alerts'] }
 ];
   var STAGES = [
