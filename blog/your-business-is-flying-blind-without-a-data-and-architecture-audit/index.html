@@ -57,6 +57,11 @@ a{color:inherit}a:hover{opacity:.85}
 .prose li::marker{color:#2457E6}
 .prose .pull{font-family:Manrope,'Helvetica Neue',Arial,sans-serif;font-size:24px;line-height:1.4;font-weight:700;color:#0E1726;letter-spacing:-.015em;border-left:3px solid #2457E6;padding-left:22px;margin:40px 0}
 .prose>p:first-child{font-size:21px;line-height:1.65;color:#0E1726}
+/* keep the footer at the bottom of short pages */
+.pg{min-height:100vh;display:flex;flex-direction:column}
+.pg>div:only-child{flex:1 0 auto;display:flex;flex-direction:column}
+.pg>*,.pg>div:only-child>*{width:100%}
+.pg footer{margin-top:auto}
 </style>
 </head>
 <body>
